@@ -197,11 +197,10 @@ async def next_page(bot, query):
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
-	btn.insert(2, [
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
+    btn.insert(2, [
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
 ])
-
 
     if 0 < offset <= int(MAX_BTN):
         off_set = 0
@@ -336,8 +335,8 @@ async def season_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
     btn.insert(2, [
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
 ])
 	
     if n_offset== '':
@@ -446,11 +445,10 @@ async def year_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
-	btn.insert(2, [
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
+    btn.insert(2, [
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
 ])
-
     
     if n_offset== '':
         btn.append(
@@ -557,9 +555,9 @@ async def quality_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}"),
     ])    
-	btn.insert(2, [
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
+    btn.insert(2, [
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
 ])
 
     if n_offset== '':
@@ -673,11 +671,11 @@ async def lang_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
-	btn.insert(2, [
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
+    btn.insert(2, [
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
+        InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
 ])
-
+	
     if n_offset== '':
         btn.append(
             [InlineKeyboardButton(text="🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", callback_data="buttons")]
@@ -1496,9 +1494,9 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                 InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
             ])   
-		btn.insert(2, [
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
-    InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
+	   btn.insert(2, [
+                InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟭", callback_data="other"),
+                InlineKeyboardButton("𝗡𝗲𝘄 𝗕𝘂𝘁𝘁𝗼𝗻 𝟮", callback_data="fsub")
 ])
 		
         else:
