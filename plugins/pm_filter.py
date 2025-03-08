@@ -200,7 +200,7 @@ async def next_page(bot, query):
     btn.insert(2, [
         InlineKeyboardButton("Amrit", callback_data="trending"),
         InlineKeyboardButton("Kumar", callback_data="mostsearch")
-])
+    ])
 
     if 0 < offset <= int(MAX_BTN):
         off_set = 0
@@ -337,7 +337,7 @@ async def season_search(client: Client, query: CallbackQuery):
     btn.insert(2, [
         InlineKeyboardButton("Amrit", callback_data="trending"),
         InlineKeyboardButton("Kumar", callback_data="mostsearch")
-])
+    ])
 	
     if n_offset== '':
         btn.append(
@@ -448,7 +448,7 @@ async def year_search(client: Client, query: CallbackQuery):
     btn.insert(2, [
         InlineKeyboardButton("Amrit", callback_data="trending"),
         InlineKeyboardButton("Kumar", callback_data="mostsearch")
-])
+    ])
     
     if n_offset== '':
         btn.append(
@@ -558,7 +558,7 @@ async def quality_search(client: Client, query: CallbackQuery):
     btn.insert(2, [
         InlineKeyboardButton("Amrit", callback_data="trending"),
         InlineKeyboardButton("Kumar", callback_data="mostsearch")
-])
+    ])
 
     if n_offset== '':
         btn.append(
@@ -674,7 +674,7 @@ async def lang_search(client: Client, query: CallbackQuery):
     btn.insert(2, [
         InlineKeyboardButton("Amrit", callback_data="trending"),
         InlineKeyboardButton("Kumar", callback_data="mostsearch")
-])
+    ])
 	
     if n_offset== '':
         btn.append(
@@ -1497,7 +1497,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
 	   btn.insert(2, [
                 InlineKeyboardButton("Amrit", callback_data="trending"),
                 InlineKeyboardButton("Kumar", callback_data="mostsearch")
-])
+            ])
 		
         else:
             btn.insert(0,[
