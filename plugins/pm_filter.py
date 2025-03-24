@@ -197,7 +197,11 @@ async def next_page(bot, query):
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
-
+    btn.insert(2, [
+    InlineKeyboardButton("Demo button", callback_data="other"),
+    InlineKeyboardButton("amrit", callback_data="fsub")
+])
+	
     if 0 < offset <= int(MAX_BTN):
         off_set = 0
     elif offset == 0:
@@ -330,7 +334,11 @@ async def season_search(client: Client, query: CallbackQuery):
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
-    
+    btn.insert(2, [
+    InlineKeyboardButton("Demo button", callback_data="other"),
+    InlineKeyboardButton("amrit", callback_data="fsub")
+])
+	
     if n_offset== '':
         btn.append(
             [InlineKeyboardButton(text="🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", callback_data="buttons")]
@@ -436,8 +444,12 @@ async def year_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
-    ])    
-    
+    ]) 
+    btn.insert(2, [
+    InlineKeyboardButton("Demo button", callback_data="other"),
+    InlineKeyboardButton("amrit", callback_data="fsub")
+])
+	
     if n_offset== '':
         btn.append(
             [InlineKeyboardButton(text="🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", callback_data="buttons")]
@@ -542,7 +554,12 @@ async def quality_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}"),
-    ])    
+    ])  
+    btn.insert(2, [
+    InlineKeyboardButton("Demo button", callback_data="other"),
+    InlineKeyboardButton("amrit", callback_data="fsub")
+])
+	
     if n_offset== '':
         btn.append(
             [InlineKeyboardButton(text="🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", callback_data="buttons")]
@@ -653,7 +670,11 @@ async def lang_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}#{offset}#{req}"),
 	InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}")
-    ])    
+    ])  
+    btn.insert(2, [
+    InlineKeyboardButton("Demo button", callback_data="other"),
+    InlineKeyboardButton("amrit", callback_data="fsub")
+])	
     if n_offset== '':
         btn.append(
             [InlineKeyboardButton(text="🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", callback_data="buttons")]
@@ -1473,7 +1494,11 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                 InlineKeyboardButton("ǫᴜᴀʟɪᴛʏ ", callback_data=f"qualities#{key}#{offset}#{req}"),
                 InlineKeyboardButton("ꜱᴇᴀꜱᴏɴ", callback_data=f"seasons#{key}#{offset}#{req}"),
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
-            ])            
+            ])   
+            btn.insert(2, [
+                InlineKeyboardButton("Demo button", callback_data="other"),
+                InlineKeyboardButton("amrit", callback_data="fsub")
+])			    
         else:
             btn.insert(0,[
                 InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
