@@ -198,8 +198,8 @@ async def next_page(bot, query):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
     btn.insert(2, [
-    InlineKeyboardButton("Demo button", callback_data="other"),
-    InlineKeyboardButton("amrit", callback_data="fsub")
+    InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans"),
+    InlineKeyboardButton("amrit", callback_data="Show Most Searches List")
 ])
 	
     if 0 < offset <= int(MAX_BTN):
@@ -335,8 +335,8 @@ async def season_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
     btn.insert(2, [
-    InlineKeyboardButton("Demo button", callback_data="other"),
-    InlineKeyboardButton("amrit", callback_data="fsub")
+    InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans"),
+    InlineKeyboardButton("amrit", callback_data="Show Most Searches List")
 ])
 	
     if n_offset== '':
@@ -446,8 +446,8 @@ async def year_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ]) 
     btn.insert(2, [
-    InlineKeyboardButton("Demo button", callback_data=batch_link),
-    InlineKeyboardButton("amrit", callback_data="fsub")
+    InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans"),
+    InlineKeyboardButton("amrit", callback_data="Show Most Searches List")
 ])
 	
     if n_offset== '':
@@ -556,8 +556,8 @@ async def quality_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}"),
     ])  
     btn.insert(2, [
-    InlineKeyboardButton("Demo button", callback_data=batch_link),
-    InlineKeyboardButton("amrit", callback_data="fsub")
+    InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans"),
+    InlineKeyboardButton("amrit", callback_data="Show Most Searches List")
 ])
 	
     if n_offset== '':
@@ -672,8 +672,8 @@ async def lang_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}")
     ])  
     btn.insert(2, [
-    InlineKeyboardButton("Demo button", callback_data=batch_link),
-    InlineKeyboardButton("amrit", callback_data="fsub")
+    InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans"),
+    InlineKeyboardButton("amrit", callback_data="Show Most Searches List")
 ])	
     if n_offset== '':
         btn.append(
@@ -1496,8 +1496,8 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
             ])   
             btn.insert(2, [
-                InlineKeyboardButton("Demo button", callback_data=batch_link),
-                InlineKeyboardButton("amrit", callback_data="fsub")
+                InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans"),
+                InlineKeyboardButton("amrit", callback_data="Show Most Searches List")
 ])			    
         else:
             btn.insert(0,[
