@@ -198,8 +198,8 @@ async def next_page(bot, query):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
     btn.extend([
-    [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
-    [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
+    [BotCommand("Demo button", callback_data="Check Available Premium Membership Plans")],
+    [BotCommand("amrit", callback_data="Show Most Searches List")]
 ])
     keyboard = InlineKeyboardMarkup(btn)
 	
@@ -336,8 +336,8 @@ async def season_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ])    
     btn.extend([
-    [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
-    [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
+    [BotCommand("Demo button", callback_data="Check Available Premium Membership Plans")],
+    [BotCommand("amrit", callback_data="Show Most Searches List")]
 ])
     keyboard = InlineKeyboardMarkup(btn)
 	
@@ -448,8 +448,8 @@ async def year_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
     ]) 
     btn.extend([
-    [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
-    [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
+    [BotCommand("Demo button", callback_data="Check Available Premium Membership Plans")],
+    [BotCommand("amrit", callback_data="Show Most Searches List")]
 ])
     keyboard = InlineKeyboardMarkup(btn)
 	
@@ -559,8 +559,8 @@ async def quality_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}"),
     ])  
     btn.extend([
-    [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
-    [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
+    [BotCommand("Demo button", callback_data="Check Available Premium Membership Plans")],
+    [BotCommand("amrit", callback_data="Show Most Searches List")]
 ])
     keyboard = InlineKeyboardMarkup(btn)
 	
@@ -676,8 +676,8 @@ async def lang_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}#{offset}#{req}")
     ])  
     btn.extend([
-    [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
-    [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
+    [BotCommand("Demo button", callback_data="Check Available Premium Membership Plans")],
+    [BotCommand("amrit", callback_data="Show Most Searches List")]
 ])	
     keyboard = InlineKeyboardMarkup(btn)	
     if n_offset== '':
@@ -1501,8 +1501,8 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
                 InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇ ", callback_data=f"languages#{key}#{offset}#{req}")
             ])   
             btn.extend([
-    [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
-    [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
+    [BotCommand("Demo button", callback_data="Check Available Premium Membership Plans")],
+    [BotCommand("amrit", callback_data="Show Most Searches List")]
 ])   
             keyboard = InlineKeyboardMarkup(btn)	  
         else:
