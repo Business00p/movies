@@ -201,6 +201,7 @@ async def next_page(bot, query):
     [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
     [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
 ])
+    keyboard = InlineKeyboardMarkup(btn)
 	
     if 0 < offset <= int(MAX_BTN):
         off_set = 0
@@ -338,6 +339,7 @@ async def season_search(client: Client, query: CallbackQuery):
     [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
     [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
 ])
+    keyboard = InlineKeyboardMarkup(btn)
 	
     if n_offset== '':
         btn.append(
@@ -449,6 +451,7 @@ async def year_search(client: Client, query: CallbackQuery):
     [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
     [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
 ])
+    keyboard = InlineKeyboardMarkup(btn)
 	
     if n_offset== '':
         btn.append(
@@ -559,6 +562,7 @@ async def quality_search(client: Client, query: CallbackQuery):
     [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
     [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
 ])
+    keyboard = InlineKeyboardMarkup(btn)
 	
     if n_offset== '':
         btn.append(
@@ -675,6 +679,7 @@ async def lang_search(client: Client, query: CallbackQuery):
     [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
     [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
 ])	
+    keyboard = InlineKeyboardMarkup(btn)	
     if n_offset== '':
         btn.append(
             [InlineKeyboardButton(text="🚸 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs 🚸", callback_data="buttons")]
@@ -1499,6 +1504,7 @@ async def auto_filter(client, msg, spoll=False , pm_mode = False):
     [InlineKeyboardButton("Demo button", callback_data="Check Available Premium Membership Plans")],
     [InlineKeyboardButton("amrit", callback_data="Show Most Searches List")]
 ])   
+            keyboard = InlineKeyboardMarkup(btn)	  
         else:
             btn.insert(0,[
                 InlineKeyboardButton("📥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 📥", callback_data=batch_link),
