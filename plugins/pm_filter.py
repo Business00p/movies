@@ -907,7 +907,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
          reply_markup=reply_markup
        )
         
-    elif query.data == "other":
+    @Client.on_message(filters.command("plan"))
+    async def plans_cmd_handler(client, message): 
+    if IS_VERIFY == False:
+        return 
         buttons = [[
             InlineKeyboardButton('☎️ 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗢𝘄𝗻𝗲𝗿 𝗧𝗼 𝗞𝗻𝗼𝘄 𝗠𝗼𝗿𝗲', user_id = ADMINS[0])
         ],[
